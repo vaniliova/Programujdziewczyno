@@ -33,4 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
       	for(var i = 0; i<= buttons.length-1; i++) {
       		buttons[i].addEventListener('click', showHide);
       	}
+
+      	var navBorder = document.querySelector('.navbar');
+      	console.log(navBorder);
+
+      	window.addEventListener('scroll', function(){
+      		navBorder.style.borderBottom = '1px solid #7f7f7f';
+      	})
 });
